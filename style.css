@@ -1,0 +1,299 @@
+
+* {
+ box-sizing: border-box;
+}
+
+/* Reset di base e font */
+body {
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ background-image: linear-gradient(to right, #06080a,#f0f2f5,#8d3d0f);  
+ margin: 0;
+ padding: 24px 16px;
+ display: flex;
+ align-items: center;
+ min-height: 100vh;
+ min-height: 100svh;
+ justify-content: flex-start;
+}
+
+.profiles {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ gap: 24px;
+ width: 100%;
+ flex-wrap: wrap;
+}
+
+.profiles > .profile-container1,
+.profiles > .profile-container2,
+.profiles > .profile-container3 {
+ flex: 1 1 280px;
+ max-width: 350px;
+}
+
+
+/* Contenitore principale */
+.profile-container1 {
+ background-color: #f0f2f5;
+ padding: clamp(20px, 5vw, 30px);
+ border-radius: 15px;
+ box-shadow: 10px 10px 10px #06080a;
+ text-align: center;
+ max-width: 350px;
+ width: 100%;
+ transition: background 0.3s ease,transform 0.2s ease, box-shadow 0.2s ease;
+ border-radius: 12px;
+}
+
+
+
+/* Foto profilo tonda */
+.profile-img1 {
+ width: min(120px, 40vw);
+ aspect-ratio: 1;
+ border-radius: 50%;
+ object-fit: cover;
+ border: 8px solid #03070a;
+ transition: background 0.3s ease,transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Titolo */
+h1 {
+ margin: 25px 0 5px 0;
+ color: #f0f2f5;
+ background-color: #06080a;
+ border-radius: 8px;
+ padding: 0px;
+ transition: background 0.3s ease,transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Bottoni dei link */
+.links1 {
+ display: flex;
+ flex-direction: column;
+ gap: 15px;
+}
+
+.link-btn1{
+ display: block;
+ padding: 12px;
+ background-color: #06080a;
+ color: #f0f2f5;
+ text-decoration: none;
+ border-radius: 8px;
+ font-weight: bold;
+ transition: background 0.3s ease,transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+
+/* Effetto quando passi il mouse sopra il bottone */
+
+.profile-img1:hover{
+ box-shadow: 0 5px 12px #801313;
+ transform: scale(1.01);
+}
+
+
+.profile-container1:hover{
+ background-color: #f0f2f5;
+ box-shadow:0 20px 12px #801313 ;
+ transform: scale(1.01);
+}
+
+
+
+.link-btn1:hover {
+ background-color: #801313;
+ box-shadow: 0 5px 12px #0f0e0e;
+}
+
+
+h1:hover{
+ background-color: #801313;
+ box-shadow: 0 5px 12px #0f0e0e;
+}
+
+@media (max-width: 360px) {
+    body {
+        padding: 16px 12px;
+    }
+
+    
+}
+
+
+
+/* Contenitore principale 2*/
+.profile-container2 {
+ background-color: #06080a;
+ padding: clamp(20px, 5vw, 30px);
+ border-radius: 15px;
+ box-shadow: 10px 10px 10px #f0f2f5;
+ text-align: center;
+ max-width: 350px;
+ width: 100%;
+ transition: background 0.3s ease, transform 0.2s ease,box-shadow 0.2s ease;
+ border-radius: 12px;
+}
+
+
+
+/* Foto profilo tonda 2*/
+.profile-img2 {
+ width: min(120px, 40vw);
+ aspect-ratio: 1;
+ border-radius: 50%;
+ object-fit: cover;
+ border: 8px solid #f0f2f5;
+ transition: background 0.3s ease,transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Titolo 2*/
+h2 {
+ margin: 25px 0 5px 0;
+ color: #06080a;
+ background-color: #f0f2f5;
+ border-radius: 8px;
+ padding: 0px;
+ transition: background 0.3s ease,transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Bottoni dei link2 */
+.links2 {
+ display: flex;
+ flex-direction: column;
+ gap: 15px;
+}
+
+.link-btn2{
+ display: block;
+ padding: 12px;
+ background-color: #f0f2f5;
+ color: #06080a;
+ text-decoration: none;
+ border-radius: 8px;
+ font-weight: bold;
+ transition: background 0.3s ease,transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+
+/* Effetto quando passi il mouse sopra il bottone */
+
+.profile-img2:hover{
+ box-shadow: 0 5px 12px #2f1491;
+ transform:scale(1.01);    
+}
+
+
+.profile-container2:hover{
+ background-color: #06080a;
+ box-shadow:0 20px 12px #2f1491 ;
+ transform: scale(1.01);
+}
+
+
+
+.link-btn2:hover {
+ background-color: #2f1491;
+ box-shadow: 0 5px 12px #f0f2f5;
+}
+
+
+h2:hover{
+ background-color: #2f1491;
+ box-shadow: 0 5px 12px #f0f2f5;
+}
+
+
+.profile-container1,
+.profile-container2,
+.profile-container3 {
+ width: min(350px, calc(100vw - 32px));
+}
+
+
+/* Contenitore principale3 */
+.profile-container3 {
+ background-color: #063810;
+ padding: clamp(20px, 5vw, 30px);
+ border-radius: 15px;
+ box-shadow: 10px 10px 10px #8d3d0f;
+ text-align: center;
+ max-width: 350px;
+ width: 100%;
+ transition: background 0.3s ease, transform 0.2s ease,box-shadow 0.2s ease;
+ border-radius: 12px;
+}
+
+
+
+/* Foto profilo tonda3 */
+.profile-img3 {
+ width: min(120px, 40vw);
+ aspect-ratio: 1;
+ border-radius: 50%;
+ object-fit: cover;
+ border: 8px solid #8d3d0f;
+ transition: background 0.3s ease,transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Titolo 3*/
+h3 {
+ margin: 25px 0 5px 0;
+ color: #8d3d0f;
+ background-color: #063810;
+ border-radius: 8px;
+ padding: 0px;
+ transition: background 0.3s ease,transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Bottoni dei link3 */
+.links3 {
+ display: flex;
+ flex-direction: column;
+ gap: 15px;
+}
+
+.link-btn3{
+ display: block;
+ padding: 12px;
+ background-color: #8d3d0f;
+ color: #063810;
+ text-decoration: none;
+ border-radius: 8px;
+ font-weight: bold;
+ transition: background 0.3s ease,transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+
+/* Effetto quando passi il mouse sopra il bottone */
+
+.profile-img3:hover{
+ box-shadow: 0 5px 12px #032009;
+ transform:scale(1.01);    
+}
+
+
+.profile-container3:hover{
+ background-color: #063810;
+ box-shadow:0 20px 12px #063810 ;
+ transform: scale(1.01);
+}
+
+
+
+.link-btn3:hover {
+ background-color: #063810;
+ color: #8d3d0f;
+ box-shadow: 0 5px 12px #032009;
+}
+
+
+h3:hover{
+ background-color: #063810;
+ box-shadow: 0 5px 12px #032009;
+}
